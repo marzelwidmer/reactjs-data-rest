@@ -16,16 +16,16 @@ import java.util.List;
  */
 @SpringBootApplication
 @EnableEurekaClient
-public class RogerRabbitService  {
+public class Application {
 
     PersonRepository personRepository;
 
-    public RogerRabbitService(PersonRepository personRepository) {
+    public Application(PersonRepository personRepository) {
         this.personRepository = personRepository;
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(RogerRabbitService.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
 
