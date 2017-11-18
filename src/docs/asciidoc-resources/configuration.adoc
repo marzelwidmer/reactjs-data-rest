@@ -1,0 +1,7 @@
+== Update Configuration
+=== Localhost
+```
+ curl -X POST  http://localhost:8081/manage/refresh   -H 'authorization: Basic dXNlcjpXZWxjb21lMV8='   -H 'cache-control: no-cache'   -H 'content-type: application/json'   -H 'postman-token: 31a1774a-4e0d-4c97-b196-d1c9f5b11ceb'
+```
+
+
