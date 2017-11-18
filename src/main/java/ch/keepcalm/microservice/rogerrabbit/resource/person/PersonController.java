@@ -3,6 +3,7 @@ package ch.keepcalm.microservice.rogerrabbit.resource.person;
 import ch.keepcalm.microservice.rogerrabbit.infrastructure.domain.Person;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.hateoas.MediaTypes;
 import org.springframework.hateoas.Resources;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
@@ -13,7 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/persons", produces = "application/hal+json")
+@RequestMapping(value = "/api/persons", produces = MediaTypes.HAL_JSON_VALUE)
 @Slf4j
 public class PersonController {
 
